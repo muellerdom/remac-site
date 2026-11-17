@@ -3,44 +3,65 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ReMac – Download and Support</title>
-<meta name="description" content="Use your Mac like a TV, with your iPhone as the remote.">
-<link rel="alternate" hreflang="de" href="de/index.html">
+<title>ReMac – Use your Mac like a TV</title>
+<meta name="description" content="Use your Mac like a TV, with your iPhone as the remote. Download, setup and help.">
+<meta property="og:title" content="ReMac – Use your Mac like a TV">
+<meta property="og:description" content="Use your Mac like a TV, with your iPhone as the remote. Download, setup and help.">
+<link rel="canonical" href="https://muellerdom.github.io/remac-site/index.html">
+<link rel="alternate" hreflang="en" href="https://muellerdom.github.io/remac-site/index.html">
+<link rel="alternate" hreflang="de" href="https://muellerdom.github.io/remac-site/de/index.html">
+<link rel="alternate" hreflang="x-default" href="https://muellerdom.github.io/remac-site/index.html">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header><nav><a href="index.html" aria-current="page">ReMac</a><a href="screensavers.html">Screensavers</a><a href="privacy.html">Privacy</a><a href="de/index.html" lang="de" hreflang="de">Deutsch</a></nav></header>
 <main>
-<nav><a href="screensavers.html">Screensavers</a><a href="privacy.html">Privacy Policy</a><a href="de/index.html" lang="de" hreflang="de">Deutsch</a></nav>
 <h1>ReMac</h1>
 <p class="muted">Use your Mac like a TV, with your iPhone as the remote.</p>
 
 <div class="downloads">
-<div class="download"><strong>ReMac for Mac</strong><span class="muted">macOS 26 · Coming soon</span></div>
-<div class="download"><strong>ReMac Remote for iPhone</strong><span class="muted">iOS 26 · App Store · Coming soon</span></div>
+<div class="download"><strong>ReMac for Mac</strong><span class="muted">macOS 26 or later · direct download · coming soon</span></div>
+<div class="download"><strong>ReMac Remote for iPhone</strong><span class="muted">iOS 26 or later · App Store · coming soon</span></div>
 </div>
 
-<section class="lang">
+<section class="card">
+<h2>What ReMac does</h2>
+<p>ReMac turns a Mac that is connected to a TV or a large display into something you use from the sofa. On the Mac, TV mode shows a home screen with large tiles; on the iPhone, ReMac Remote is the remote. You need both apps.</p>
+<ul>
+<li><strong>Tiles</strong> for streaming websites and Mac apps, opened full screen.</li>
+<li><strong>Touchpad and keyboard</strong> on the iPhone, for the pointer, scrolling and typing.</li>
+<li><strong>Volume, speakers and display</strong>: change the volume, pick an AirPlay speaker or another screen.</li>
+<li><strong>Screensavers</strong> that keep a still picture off the screen. <a href="screensavers.html">See them all.</a></li>
+<li><strong>Sleep timer, scenes and VPN switching</strong>, also through Siri and Control Center.</li>
+</ul>
+<p>The Mac app is free. The iPhone app is free too; a one-time purchase, ReMac Pro, will unlock extras such as VPN switching, scenes and Siri.</p>
+</section>
+
+<section class="card">
 <h2>Getting started</h2>
 <ol>
-<li>Install ReMac on the Mac you want to use as a TV (download above, once available). It lives in the menu bar, or full screen in TV mode.</li>
-<li>Allow Accessibility access when ReMac asks, so the remote can move the pointer and type. The Welcome to ReMac window that opens on first launch has a button for it.</li>
-<li>Install ReMac Remote on your iPhone from the App Store.</li>
-<li>On the Mac, choose Pair iPhone… in the ReMac menu or the welcome window, and scan the code with the iPhone. Check that both show the same six-digit code, then click Allow on the Mac.</li>
+<li>Download ReMac on the Mac you want to use as a TV, drag it to Applications and open it. A small TV icon appears in the menu bar; in TV mode ReMac fills the whole screen.</li>
+<li>In the “Welcome to ReMac” window, click “Allow…” and switch ReMac on in the Accessibility list that opens. The remote needs this to move the pointer and type.</li>
+<li>Install ReMac Remote on your iPhone from the App Store. Allow Local Network and Camera when the iPhone asks.</li>
+<li>On the Mac, choose “Pair iPhone…” in the ReMac menu (the TV icon in the menu bar) or in the welcome window, and scan the code with the iPhone. Check that both show the same six-digit code, then click “Allow” on the Mac.</li>
+<li>Press Home on the iPhone: TV mode starts and shows your tiles. The first time you open a streaming tile, sign in to that service on the Mac.</li>
 </ol>
+<p>New versions of the Mac app come from this page; it doesn't update itself.</p>
 
 <h2>Common questions</h2>
 <h3>The iPhone doesn't find my Mac</h3>
-<p>Both must be on the same network, ReMac must be running, and the Mac must be awake. If the Mac sleeps, set it to stay awake while its display is off, or turn on "Wake for network access" in System Settings.</p>
-<h3>The Mac stays dark</h3>
-<p>Press any button on the remote: the first press wakes the screen and ends the screen saver. Opening an app or pressing Power wakes the screen and carries on. If the Mac is locked, unlock it at the Mac; ReMac never handles your password.</p>
+<p>Check four things: ReMac is running on the Mac, the Mac is awake, both are on the same Wi-Fi, and ReMac Remote is switched on under Settings › Privacy &amp; Security › Local Network on the iPhone. So the Mac stays reachable while its display is off, open ReMac Settings › General › Waking from iPhone and click “Set Up Waking…”. “Wake for network access” alone wakes a sleeping Mac only if an Apple TV or HomePod is on the same network.</p>
+<h3>The screen stays dark</h3>
+<p>Touch the touchpad or press Home: the first press only wakes the screen and ends the screensaver. Volume and mute don't wake it. Opening an app wakes the screen and then opens the app; Power wakes it and shows the home screen (with the Power button set to “Leave TV Mode”, the default). This works while the Mac itself is awake. If the Mac shows its login screen, unlock it at the Mac: ReMac never types or stores your password.</p>
 <h3>Which browsers work for web tiles?</h3>
-<p>Brave, Vivaldi, Edge, Chrome, Opera, Firefox and Safari. Brave is recommended: tiles open in their own private profile and videos switch to full screen automatically. In Safari, videos don't switch to full screen on their own.</p>
+<p>Brave, Vivaldi, Opera, Edge, Chrome, Firefox and Safari. Brave, Vivaldi and Opera work best: videos switch to full screen by themselves. In Edge, Chrome, Firefox and Safari you start full screen yourself. Except in Safari, tiles open in a separate ReMac profile, apart from your own browser windows, so sign in to each streaming service once there. Safari tiles use your normal Safari and need “Allow Control of Safari…” (welcome window or ReMac Settings › Tiles).</p>
 <h3>Switching VPN locations</h3>
-<p>ReMac switches VPN services you have already set up on the Mac. In ReMac Settings › VPN, "Set Up VPN…" walks you through it. Respect the terms of the services you watch.</p>
+<p>ReMac switches between VPN connections you have already set up on the Mac; it doesn't include a VPN. In ReMac Settings › VPN, “Set Up VPN…” walks you through it. Check the terms of your streaming services.</p>
 
 <h2>Contact</h2>
 <p>Questions, problems or ideas: <a href="https://github.com/muellerdom/remac-site/issues">open an issue on GitHub</a>.</p>
 </section>
 </main>
+<footer><p>Apple, Mac, iPhone, Siri, Safari, AirPlay, Apple TV and HomePod are trademarks of Apple Inc. ReMac is not affiliated with Apple or with the browsers and services named here.</p></footer>
 </body>
 </html>
