@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ReMac – Screensavers</title>
-<meta name="description" content="The screensavers ReMac shows on your TV: Doppler waves, fluted glass, gravity and pride, all drawn live.">
+<meta name="description" content="The screensavers ReMac shows on your Mac: Doppler waves, fluted glass, gravity and pride, all drawn live.">
+<link rel="alternate" hreflang="de" href="de/screensavers.html">
 <link rel="stylesheet" href="style.css">
 <style>
 main.wide { max-width: 1040px; }
@@ -27,9 +28,9 @@ main.wide { max-width: 1040px; }
 </head>
 <body>
 <main class="wide">
-<nav><a href="index.html">ReMac</a><a href="screensavers.html" aria-current="page">Screensavers</a><a href="privacy.html">Privacy Policy</a></nav>
+<nav><a href="index.html">ReMac</a><a href="screensavers.html" aria-current="page">Screensavers</a><a href="privacy.html">Privacy Policy</a><a href="de/screensavers.html" lang="de" hreflang="de">Deutsch</a></nav>
 <h1>Screensavers</h1>
-<p class="muted">When ReMac's home screen sits idle for five minutes, your TV shows one of these instead of a still picture. They stay dark and keep drifting, so nothing burns in, and the first press on the remote only ends the screensaver. Pick one in ReMac Settings › General › Screensaver. Tap a design to watch it large.</p>
+<p class="muted">When ReMac's home screen sits idle for five minutes, your Mac shows one of these instead of a still picture. They stay dark and keep drifting, so nothing burns in, and the first press on the remote only ends the screensaver. Pick one in ReMac Settings › General › Screensaver. Tap a design to watch it large.</p>
 <div class="stage"><canvas id="tv"></canvas><div class="label" id="tvlabel"></div></div>
 <div class="controls"><label for="ribs">Vertical lines in the glass designs</label><input type="range" id="ribs" min="0" max="7" step="1" value="3"><output id="ribsOut" for="ribs">1×</output></div>
 <section class="group"><h2>Doppler Effect</h2><p class="muted">Soft bodies whose wavefronts bunch up ahead of their motion and spread out behind.</p><div class="savers"><button class="saver" data-i="0" aria-label="Watch Wake large"><canvas width="384" height="216" aria-hidden="true"></canvas><strong>Wake</strong><span>A soft glowing core drifts on a slow loop, shedding rings that crowd ahead of it.</span></button><button class="saver" data-i="1" aria-label="Watch Speed Lines large"><canvas width="384" height="216" aria-hidden="true"></canvas><strong>Speed Lines</strong><span>The Wake drawn only in fine vertical lines; almost nothing lights up.</span></button><button class="saver" data-i="2" aria-label="Watch Ribbon large"><canvas width="384" height="216" aria-hidden="true"></canvas><strong>Ribbon</strong><span>A silk thread wanders across, folding into tight waves ahead and wide sweeps behind.</span></button></div></section>
@@ -82,7 +83,7 @@ const shared = document.createElement("canvas");
 shared.width = 384; shared.height = 216;
 const drawShared = makeRenderer(shared, 0);
 const drawTV = makeRenderer(document.getElementById("tv"), Math.min(devicePixelRatio || 1, 1.5) * 0.75);
-if (!drawTV) document.querySelector(".stage").insertAdjacentHTML("beforeend", '<div class="label">WebGL is off in this browser, so the screensavers cannot play here.</div>');
+if (!drawTV) document.querySelector(".stage").insertAdjacentHTML("beforeend", '<div class="label">WebGL is off in this browser, so the screensavers can&#39;t play here.</div>');
 
 const cards = [...document.querySelectorAll(".saver")].map(el => ({ el, d: DESIGNS[+el.dataset.i], ctx: el.querySelector("canvas").getContext("2d"), visible: true }));
 const watch = new IntersectionObserver(entries => entries.forEach(e => { cards.find(c => c.el === e.target).visible = e.isIntersecting; }));
